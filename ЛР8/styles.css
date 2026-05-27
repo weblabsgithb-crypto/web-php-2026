@@ -1,0 +1,182 @@
+/* === Общие стили === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000;
+    background-color: #e8e8e8;
+    padding: 20px;
+    padding-bottom: 70px;
+}
+
+/* === Шапка === */
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 15px 30px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+}
+
+header h1 {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+header p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* === Контейнер === */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    padding: 25px 30px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    font-size: 20px;
+    color: #003366;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 8px;
+}
+
+/* === Форма ввода текста === */
+.text-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.text-form textarea {
+    width: 100%;
+    min-height: 200px;
+    padding: 12px 15px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #999;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.btn-analyze {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #003366;
+    color: #fff;
+    border: 2px solid #002244;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.2s;
+    align-self: flex-start;
+}
+
+.btn-analyze:hover {
+    background-color: #0059b3;
+}
+
+/* === Исходный текст === */
+.src_text {
+    font-style: italic;
+    color: #003366;
+    background-color: #fff;
+    padding: 15px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.src_error {
+    color: #c0392b;
+    font-weight: bold;
+    font-style: italic;
+    padding: 15px 20px;
+    background-color: #fdecea;
+    border: 1px solid #c0392b;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* === Таблица результатов === */
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+.results-table th,
+.results-table td {
+    border: 1px solid #000;
+    padding: 8px 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.results-table th {
+    background-color: #003366;
+    color: #fff;
+    font-weight: bold;
+    width: 50%;
+}
+
+.results-table td {
+    background-color: #fff;
+}
+
+.results-table tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+
+/* === Кнопка «Другой анализ» === */
+.btn-another {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #27ae60;
+    color: #fff;
+    border: 2px solid #1e8449;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.2s;
+    margin-top: 20px;
+}
+
+.btn-another:hover {
+    background-color: #2ecc71;
+}
+
+/* === Подвал === */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #444;
+    color: #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    z-index: 1000;
+}

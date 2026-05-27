@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e8e8e8;
+    color: #111;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #003366;
+    color: #fff;
+    padding: 14px 30px;
+}
+
+.header-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.header-subtitle {
+    margin-top: 4px;
+    font-size: 15px;
+}
+
+main {
+    width: 95%;
+    max-width: 1100px;
+    margin: 24px auto 90px;
+    background: #f7f7f7;
+    border-radius: 8px;
+    padding: 26px 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+h1, h2 {
+    color: #003366;
+    margin-bottom: 16px;
+}
+
+.array-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.elements-table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 520px;
+}
+
+.elements-table td {
+    border: 1px solid #b8c4d1;
+    padding: 10px;
+    background: #fff;
+}
+
+.index-cell {
+    width: 60px;
+    text-align: center;
+    font-weight: bold;
+    background: #edf3f8;
+}
+
+.array-input,
+select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #aeb8c2;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    max-width: 700px;
+}
+
+.form-row label {
+    min-width: 220px;
+    font-weight: bold;
+}
+
+.buttons-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.action-btn,
+.back-btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.primary-btn {
+    background: #003366;
+    color: #fff;
+}
+
+.secondary-btn,
+.back-btn {
+    background: #d7e3ef;
+    color: #003366;
+}
+
+.primary-btn:hover {
+    background: #004e8a;
+}
+
+.secondary-btn:hover,
+.back-btn:hover {
+    background: #c4d6e8;
+}
+
+.message,
+.info-block,
+.steps-block,
+.result-block {
+    margin-bottom: 22px;
+}
+
+.error-message {
+    background: #ffe8e8;
+    color: #9b1d1d;
+    border: 1px solid #e2a5a5;
+    padding: 14px 16px;
+    border-radius: 6px;
+}
+
+.success-text,
+.finish-text {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #0d5f2a;
+}
+
+.array-state {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.arr-element {
+    background: #fff;
+    border: 1px solid #bcc7d1;
+    border-radius: 6px;
+    padding: 8px 12px;
+    min-width: 90px;
+}
+
+.step-item {
+    background: #fff;
+    border: 1px solid #d3d9df;
+    border-radius: 6px;
+    padding: 14px;
+    margin-bottom: 12px;
+}
+
+.step-title {
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: auto;
+    background: #444;
+    color: #ddd;
+    text-align: center;
+    padding: 14px;
+    font-size: 14px;
+}

@@ -1,0 +1,166 @@
+/* === Общие стили === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000;
+    background-color: #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* === Шапка === */
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header img.logo {
+    height: 60px;
+    width: auto;
+}
+
+header .header-info h1 {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+header .header-info p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* === Основной контент === */
+main {
+    flex: 1;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 25px 35px;
+    background-color: #f0f0f0;
+    color: #000;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+}
+
+main h2 {
+    font-size: 22px;
+    color: #003366;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 8px;
+}
+
+main p {
+    margin-bottom: 12px;
+}
+
+/* === Таблица результатов === */
+table.results {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table.results th,
+table.results td {
+    border: 1px solid #000;
+    padding: 10px 14px;
+    text-align: center;
+}
+
+table.results th {
+    background-color: #003366;
+    color: #fff;
+    font-weight: bold;
+}
+
+table.results tr:nth-child(even) {
+    background-color: #d9d9d9;
+}
+
+/* === Списки === */
+ul.results-list,
+ol.results-list {
+    margin: 15px 0;
+    padding-left: 30px;
+}
+
+ul.results-list li,
+ol.results-list li {
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+/* === Блочная верстка (тип E) === */
+.block-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.block-container .result-block {
+    border: 2px solid red;
+    padding: 10px 16px;
+    font-size: 14px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+/* === Простая верстка (тип A) === */
+.simple-output p {
+    margin-bottom: 4px;
+    font-size: 15px;
+}
+
+/* === Статистика === */
+.stats {
+    margin-top: 25px;
+    padding: 15px 20px;
+    background-color: #d9d9d9;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+}
+
+.stats h3 {
+    font-size: 18px;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.stats p {
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+/* === Подвал === */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #444;
+    color: #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    z-index: 1000;
+}
